@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="info"></div>
+    <div class="mainConteiner">
+      <div class="littleConteiner entryData">
+        <label for="balance">Баланс</label>
+         <input type="text" id="balance" class="inputField" value="1000грн." readonly>
+         <label for="beer">Пиво</label>
+         <input type="text" id="beer" class="inputField" value="80 шт." readonly>
+         <label for="wine">Вино</label>
+         <input type="text" id="wine" class="inputField" value="45 шт." readonly>
+         <label for="pepsi">Пепсі</label>
+         <input type="text" id="pepsi" class="inputField" value="70 шт." readonly>
+      </div>
+      <div class="littleConteiner">
+        <form name="inputData" class="inputData">
+            <label for="amound" class="amoundText">Кількість</label>
+            <input type="number" id="amound" class="inputField" />
+            <div class="choiceProduct">
+              <input type="radio" id="beerChoice" value="Пиво" name='radio'/>
+              <label for="beerChoice">Пиво</label>
+              <input type="radio" id="wineChoice" value="Вино" name='radio'/>
+              <label for="wineChoice">Вино</label>
+              <input type="radio" id="pepsiChoice" value="Пепсі" name='radio'/>
+              <label for="pepsiChoice">Пепсі</label>
+            </div>
+            <button type="button" class="btn btnAdd">Додати</button>
+            <div class="fildArea" readonly></div>
+            <!-- <textarea cols="15" rows="4" class="fildArea" readonly></textarea> -->
+            <button type="button" class="btn btnBuy">Купити</button>
+          </div>
+        </form>
+      <div class="littleConteiner purchaseResaltBox"></div>
+    </div>
+
+    <script src="./modul.js" type="modul"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
